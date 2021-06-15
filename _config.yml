@@ -16,7 +16,7 @@
 title: Nothing In Particular
 email: me@sahibbhai.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My name is Sahib - I'm a (junior) systems administrator with a love for automation and operations.
+  Why spend 5 minutes doing something manually when you can spend 7 days trying to automate it?
 twitter_username: username
 github_username: perfectly-preserved-pie
 minimal_mistakes_skin: dark
@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Sahib Bhai"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Why spend 5 minutes doing something manually when you can spend 7 days trying to automate it?"
+  bio    : "My name is Sahib - I'm a (junior) systems administrator with a love for automation and operations."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"

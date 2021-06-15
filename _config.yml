@@ -13,14 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Nothing In Particular
+email: me@sahibbhai.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My name is Sahib - I'm a (junior) systems administrator with a love for automation and operations.
 twitter_username: username
-github_username: username
+github_username: perfectly-preserved-pie
 minimal_mistakes_skin: default
 search: true
 
@@ -58,9 +56,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Sahib Bhai"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Why spend 5 minutes doing something manually when you can spend 7 days trying to automate it?"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -70,10 +68,12 @@ author:
       url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/perfectly-preserved-pie"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/sahib-bhai-78166394/"
+      
+        
 
 footer:
   links:
@@ -82,10 +82,15 @@ footer:
       url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/perfectly-preserved-pie"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/sahib-bhai-78166394/"
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "perfectly-preserved-pie"
 
 defaults:
   # _posts

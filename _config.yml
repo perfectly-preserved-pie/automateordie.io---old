@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Nothing In Particular
+subtitle: "hello_world.exe"
 email: me@sahibbhai.com
 description: >- # this means to ignore newlines until "baseurl:"
   Why spend 5 minutes doing something manually when you can spend 7 days trying to automate it?
@@ -29,7 +30,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles
 
 include:
   - _pages
@@ -104,6 +105,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"

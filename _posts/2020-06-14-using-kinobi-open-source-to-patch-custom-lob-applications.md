@@ -33,7 +33,27 @@ You'll see an error message similiar to "Bind: Address Already in Use".
 
 For that reason, it's best to spin up a new VM/server and install only Kinobi on that.
 
-# How to manually add a source
+# How to manually add a software title
+And now we get to the meat of it 🍖
+Mondada has [an excellent guide](https://mondada.atlassian.net/wiki/spaces/MSD/pages/553222153/Manual+Creation) on how to create your first software title.
+In my case, I'll be creating one for Palo Alto GlobalProtect.
+
+** GlobalProtect example
+Click on the "New" button to start the process, then fill out the information specified.
+![Starting the process with some basic information](https://i.imgur.com/1u6dsQy.png)
+* **Name**: this shows up in the JAMF GUI.
+* **Publisher**: this shows up in the JAMF GUI.
+* **Application Name**: optional. Skip it.
+* **Bundle Identifier**: optional. Skip it.
+* **Current Version**: What's the latest version of this software you have in your environment? Put that here. It'll be used in the patch reports as the latest version.
+* **ID**: This is just an internal reference for Kinobi. You can make it anything you want but I tend to just put the application name.
+
+When you're finished, click Save. You've just created your first software title! Now to create one (or more) definitions...
+
+## How to manually add a patch definiition to a software title
+
+
+
 
 ## Patch definitions for each app versions are needed otherwise they all show up as "Unknown"
 

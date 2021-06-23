@@ -60,15 +60,33 @@ The syntax, form, and structure is exactly the same as a smart group or advanced
 * etc.
 
 It's the same process for our software title requirement. You can make the requirement any of a number of different criteria but in general, *your requirement should be the easiest way to detect the presence of the application on a computer*; that'll usually be "Application Title". 
-So go ahead and click the "Add" button to begin creating a requirement.
-Click the drop-down menu and select "Application Title" and click OK.
+1. Click the "Requirements" tab.
+2. Click the "Add" button to begin creating a requirement.
+3. Click the drop-down menu and select "Application Title" and click Save.
 ![Requirements](https://i.imgur.com/mlJ5g8g.png)
 
-Then change the **operator** to "is" and the **value** to "GlobalProtect.app"
+4. Then change the **operator** to "is" and the **value** to "GlobalProtect.app"
 ![Criteria](https://i.imgur.com/XOWuSvI.png)
 
 
+# Patches/Patch Definitions
+Now that we've created the base software title and its requirement, we need to create some "sub-items" that Kinobi calls "patches" and JAMF calls "patch definitions". Because we're working with Kinobi, I'll refer to them as patches from now on. Both terms refer to the same thing: software title version information. For example, each of these GlobalProtect versions would be its own patch (and each patch can have its own possibly different requirements):
+* GlobalProtect v5.0.8
+* GlobalProtect v5.1.5
+* GlobalProtect v5.2.6
+* and so on.
 
+## Creating a patch in Kinobi
+1. Click the "Patches" tab (next to the "Requirements" tab).
+2. Click the "New" button.
+3. Fill out the fields as shown:
+* **Sort Order**: how should this appear
+* **Version**: Version associated with this patch. 
+* **Release Date**: optional. You can set this to the actual release date in your environment, the vendor's release date, or just leave it as default.
+* **Standalone**: if this patch will need to be installed incrementally, select No.
+* **Reboot**: Does the application patch need a reboot to complete the process?
+* **Minimum Operating System**: Self-explanatory.
+![New patch version](https://i.imgur.com/dlL6VKt.png)
 
 ## Patch definitions for each app versions are needed otherwise they all show up as "Unknown"
 

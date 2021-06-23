@@ -63,8 +63,9 @@ It's the same process for our software title requirement. You can make the requi
 So go ahead and click the "Add" button to begin creating a requirement.
 Click the drop-down menu and select "Application Title" and click OK.
 ![Requirements](https://i.imgur.com/mlJ5g8g.png)
+
 Then change the **operator** to "is" and the **value** to "GlobalProtect.app"
-[Criteria](https://i.imgur.com/XOWuSvI.png)
+![Criteria](https://i.imgur.com/XOWuSvI.png)
 
 
 

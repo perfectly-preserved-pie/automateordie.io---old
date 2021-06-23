@@ -48,9 +48,9 @@ Click on the "New" button to start the process, then fill out the information sp
 * **Current Version**: What's the latest version of this software you have in your environment? Put that here. It'll be used in the patch reports as the latest version.
 * **ID**: This is just an internal reference for Kinobi. You can make it anything you want but I tend to just put the application name.
 
-When you're finished, click Save. You've just created your first software title! Now to create one (or more) definitions...
+When you're finished, click Save. You've just created your first software title! 🎉 Now to create one (or more) definition(s)...
 
-## How to manually add a patch definiition to a software title
+## How to manually add a patch definition to a software title
 
 
 

@@ -40,13 +40,13 @@ In my case, I'll be creating one for Palo Alto GlobalProtect.
 
 ## GlobalProtect example
 Click on the "New" button to start the process, then fill out the information specified.
-![Starting the process with some basic information](https://i.imgur.com/1u6dsQy.png)
 * **Name**: this shows up in the JAMF GUI.
 * **Publisher**: this shows up in the JAMF GUI.
 * **Application Name**: optional. Skip it.
 * **Bundle Identifier**: optional. Skip it.
 * **Current Version**: What's the latest version of this software you have in your environment? Put that here. It'll be used in the patch reports as the latest version.
 * **ID**: This is just an internal reference for Kinobi. You can make it anything you want but I tend to just put the application name.
+![Starting the process with some basic information](https://i.imgur.com/1u6dsQy.png)
 
 When you're finished, click Save. You've just created your first software title! 🎉 Now we need to add a "requirement".
 
@@ -86,6 +86,7 @@ Now that we've created the base software title and its requirement, we need to c
 * **Standalone**: if this patch will need to be installed incrementally, select No.
 * **Reboot**: Does the application patch need a reboot to complete the process?
 * **Minimum Operating System**: Self-explanatory.
+
 ![New patch version](https://i.imgur.com/dlL6VKt.png)
 
 ## Patch definitions for each app versions are needed otherwise they all show up as "Unknown"

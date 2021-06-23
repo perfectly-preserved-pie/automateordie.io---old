@@ -38,7 +38,7 @@ And now we get to the meat of it 🍖
 Mondada has [an excellent guide](https://mondada.atlassian.net/wiki/spaces/MSD/pages/553222153/Manual+Creation) on how to create your first software title.
 In my case, I'll be creating one for Palo Alto GlobalProtect.
 
-** GlobalProtect example
+## GlobalProtect example
 Click on the "New" button to start the process, then fill out the information specified.
 ![Starting the process with some basic information](https://i.imgur.com/1u6dsQy.png)
 * **Name**: this shows up in the JAMF GUI.
@@ -50,7 +50,7 @@ Click on the "New" button to start the process, then fill out the information sp
 
 When you're finished, click Save. You've just created your first software title! 🎉 Now we need to add a "requirement".
 
-## What's a Requirement (for a software title)?
+### What's a Requirement (for a software title)?
 Simply put, a requirement (per Kinobi) is "Criteria used to determine which computers in your environment have this software title installed."
 The syntax, form, and structure is exactly the same as a smart group or advanced search in JAMF. Ever created one of those? Maybe you've created a smart group or advanced search based on things like
 * ARM or x86_64 CPU architecture
@@ -69,14 +69,14 @@ It's the same process for our software title requirement. You can make the requi
 ![Criteria](https://i.imgur.com/XOWuSvI.png)
 
 
-# Patches/Patch Definitions
+### Patches/Patch Definitions
 Now that we've created the base software title and its requirement, we need to create some "sub-items" that Kinobi calls "patches" and JAMF calls "patch definitions". Because we're working with Kinobi, I'll refer to them as patches from now on. Both terms refer to the same thing: software title version information. For example, each of these GlobalProtect versions would be its own patch (and each patch can have its own possibly different requirements):
 * GlobalProtect v5.0.8
 * GlobalProtect v5.1.5
 * GlobalProtect v5.2.6
 * and so on.
 
-## Creating a patch in Kinobi
+#### Creating a patch in Kinobi
 1. Click the "Patches" tab (next to the "Requirements" tab).
 2. Click the "New" button.
 3. Fill out the fields as shown:

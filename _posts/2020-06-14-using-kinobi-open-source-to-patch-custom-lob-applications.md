@@ -48,9 +48,23 @@ Click on the "New" button to start the process, then fill out the information sp
 * **Current Version**: What's the latest version of this software you have in your environment? Put that here. It'll be used in the patch reports as the latest version.
 * **ID**: This is just an internal reference for Kinobi. You can make it anything you want but I tend to just put the application name.
 
-When you're finished, click Save. You've just created your first software title! 🎉 Now to create one (or more) definition(s)...
+When you're finished, click Save. You've just created your first software title! 🎉 Now we need to add a "requirement".
 
-## How to manually add a patch definition to a software title
+## What's a Requirement (for a software title)?
+Simply put, a requirement (per Kinobi) is "Criteria used to determine which computers in your environment have this software title installed."
+The syntax, form, and structure is exactly the same as a smart group or advanced search in JAMF. Ever created one of those? Maybe you've created a smart group or advanced search based on things like
+* ARM or x86_64 CPU architecture
+* Presence of an installed application
+* Operating System Version
+* Extension Attribute value
+* etc.
+
+It's the same process for our software title requirement. You can make the requirement any of a number of different criteria but in general, *your requirement should be the easiest way to detect the presence of the application on a computer*; that'll usually be "Application Title". 
+So go ahead and click the "Add" button to begin creating a requirement.
+Click the drop-down menu and select "Application Title" and click OK.
+![Requirements](https://i.imgur.com/mlJ5g8g.png)
+Then change the **operator** to "is" and the **value** to "GlobalProtect.app"
+[Criteria](https://i.imgur.com/XOWuSvI.png)
 
 
 

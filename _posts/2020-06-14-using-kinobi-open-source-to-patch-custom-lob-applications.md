@@ -7,7 +7,7 @@ Aside from JAMF's internal catalog (which is free), JAMF also allows you to conf
 To get a hint of what you _can_ (but sometimes don't need) to define, take a look at [Kinobi's page on the topic](https://mondada.atlassian.net/wiki/spaces/MSD/pages/553189450/Patch+Definitions).
 
 # Introducing Kinobi Open-Source (not self-hosted, not cloud)
-That JAMF article is pretty intimidating if you've never worked with APIs or JSON in general. Thankfully, we can stand on the shoulder of giants and use the solutions created by people have already done the impressive work before us. One of these solutions is Kinobi Open-Source.
+That JAMF article is pretty intimidating if you've never worked with APIs or JSON in general. Thankfully, we can stand on the shoulder of giants and use the solutions created by people who have already done the impressive work before us. One of these solutions is Kinobi Open-Source.
 Kinobi is an external patch definition server that comes in 3 different flavors:
 * Kinobi Cloud, a cloud-hosted patch definition server for Jamf Pro with access to a Kinobi subscription and JSON importer.
 * Kinobi Self-Hosted, a self-hosted patch definition server for Jamf Pro with access to a Kinobi subscription and JSON importer.

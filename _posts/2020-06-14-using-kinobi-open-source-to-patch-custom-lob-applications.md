@@ -80,7 +80,7 @@ Now that we've created the base software title and its requirement, we need to c
 1. Click the "Patches" tab (next to the "Requirements" tab).
 2. Click the "New" button.
 3. Fill out the fields as shown:
-* **Sort Order**: how should this appear
+* **Sort Order**: how should this appear in Kinobi. Purely cosmetic.
 * **Version**: Version associated with this patch. 
 * **Release Date**: optional. You can set this to the actual release date in your environment, the vendor's release date, or just leave it as default.
 * **Standalone**: if this patch will need to be installed incrementally, select No.

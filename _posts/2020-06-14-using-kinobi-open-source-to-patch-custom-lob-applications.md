@@ -1,5 +1,5 @@
 # Context
-We use JAMF at our company but had a problem with keeping our line-of-business (LOB) applications updated. [JAMF's Patch Management catalog](https://docs.jamf.com/jamf-app-catalog/Patch_Management_Software_Titles.html), while extensive, doesn't include applications hiding behind a company's paywall: VPN clients, NAC agents, AV/EDR agents, etc. 
+We use JAMF at our company but had a problem with keeping our line-of-business (LOB) applications updated. [JAMF's Patch Management catalog](https://docs.jamf.com/jamf-app-catalog/Patch_Management_Software_Titles.html), while extensive, doesn't include applications hiding behind a vendor's paywall: VPN clients, NAC agents, AV/EDR agents, etc. 
 In our case, one of those applications is Palo Alto GlobalProtect. While the application has its own auto-upgrade mechanism, I'm using it here as an example of what you can do with Kinobi Open-Source.
 
 # External patch sources

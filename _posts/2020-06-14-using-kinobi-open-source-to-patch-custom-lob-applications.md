@@ -89,6 +89,15 @@ Now that we've created the base software title and its requirement, we need to c
 
 ![New patch version](https://i.imgur.com/dlL6VKt.png)
 
-## Patch definitions for each app versions are needed otherwise they all show up as "Unknown"
+## ⚠ A patch for **each** app version is needed otherwise they all show up as "Unknown"
+This is important! You'll need to add a patch for _every version_ (other than the latest version, which you've already added) of your application that currently exists in your environment. In this case, I added patches for some of the older GlobalProtect versions:
+
+
+
+If you _don't_ define patches for every version, they'll show up as an "Unknown" version in the JAMF Patch Management report as you see below:
+![Undefined patch versions](https://i.imgur.com/WcF7k6F.png)
+
+
+As you can see, that report isn't very helpful; although I defined the latest version (5.2.6) the other versions floating around show up as "Unknown". For this reason I strongly urge you to take the time and create a patch for each app version.
 
 * Next blog post about using PatchCLI to autogenerate the JSON for easy importing into Kinobi

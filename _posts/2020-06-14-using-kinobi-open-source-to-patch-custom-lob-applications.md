@@ -100,4 +100,8 @@ If you _don't_ define patches for every version, they'll show up as an "Unknown"
 
 As you can see, that report isn't very helpful; although I defined the latest version (5.2.6) the other versions floating around show up as "Unknown". For this reason I strongly urge you to take the time and create a patch for each app version.
 
-* Next blog post about using PatchCLI to autogenerate the JSON for easy importing into Kinobi
+Anyways, at this point, you're done! 🎉 You've successfully installed Kinobi, connected to JAMF, and created your first software title & associcated patch(es).
+
+## 🤔 Using Kinobi seems like a lot of clicking around in the GUI. Isn't there a way to to automate this?
+You're right! It gets annoying especially if you have lots of apps. Luckily, Kinobi allows you to manually upload JSON definitions for patches.
+_But how do you automatically generate those JSON files_? That's where [Patch Starter Script](https://github.com/brysontyrrell/Patch-Starter-Script) comes into play. It's a Python script that will spit out a fully defined JSON file for you for any application. Then you can just upload that JSON into Kinobi. But that deserves its own blog post in the future! I'll link to the new post once I've finished setting PSS up in my own environment and finish the write up.

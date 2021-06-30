@@ -51,7 +51,7 @@ Click on the "New" button to start the process, then fill out the information sp
 When you're finished, click Save. You've just created your first software title! 🎉 Now we need to add a "requirement".
 
 ### What's a Requirement (for a software title)?
-Simply put, a requirement (per Kinobi) is "Criteria used to determine which computers in your environment have this software title installed."
+Simply put, a requirement (per Kinobi) is "_Criteria used to determine which computers in your environment have this software title installed._"
 The syntax, form, and structure is exactly the same as a smart group or advanced search in JAMF. Ever created one of those? Maybe you've created a smart group or advanced search based on things like
 * ARM or x86_64 CPU architecture
 * Presence of an installed application

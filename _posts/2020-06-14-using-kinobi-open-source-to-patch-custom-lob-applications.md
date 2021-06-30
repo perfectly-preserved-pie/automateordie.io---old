@@ -94,7 +94,7 @@ This is important! You'll need to add a patch for _every version_ (other than th
 
 
 
-If you _don't_ define patches for every version, they'll show up as an "Unknown" version in the JAMF Patch Management report as you see below:
+If you _don't_ define patches for every version, they'll show up as an "Unknown" version in the JAMF Patch Management report:
 ![Undefined patch versions](https://i.imgur.com/WcF7k6F.png)
 
 

@@ -1,3 +1,5 @@
+# Introducing... JAMF Title Editor!
+
 Remember [my last post about patching 3rd party applications with Kinobi](https://automateordie.io/using-kinobi-open-source-to-patch-custom-lob-applications/)? Well, JAMF has implemented that natively into the JAMF Pro interface [as of version 10.31.0](https://docs.jamf.com/10.31.0/jamf-pro/release-notes/New_Features_and_Enhancements.html#concept-1673) (released 2021-07-29). So now we don't even need Kinobi!
 
 ### The good news 🎉

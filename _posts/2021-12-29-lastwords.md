@@ -1,5 +1,5 @@
 # The Website
-https://lastwords.fyi
+[I made a website for my new project!](https://lastwords.fyi)
 
 # The Idea
 Back in 2014 or so, I found out that the Texas Department of Corrective Justice posts every single executed inmate's last statement [on their website](https://www.tdcj.texas.gov/death_row/dr_executed_offenders.html). While definitely morbidly interesting, I also thought it would make a great coding project: what if I could automatically scrape each last statement along with the inmate's details and post them to a website? Furthermore, what if the website was *actually pretty*? I got my design inspiration from another Tumblr blog I had been following at the time, [A Sea of Quotes](https://www.aseaofquotes.com/). I wanted to apply that same look to these last statements.

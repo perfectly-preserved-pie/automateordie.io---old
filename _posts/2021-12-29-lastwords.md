@@ -9,7 +9,9 @@ Well, it turns out that
 1. Coding is fucking hard.
 2. Web design is fucking hard.
   
-And for the next 8 years or so, I floundered. I would get a burst of inspiration, work on the project, run into some coding obstacle, and then give up. ![Rinse and repeat for years and years](https://i.imgur.com/qE2xj7x.jpg). 
+And for the next 8 years or so, I floundered. I would get a burst of inspiration, work on the project, run into some coding obstacle, and then give up. 
+
+![Rinse and repeat for years and years](https://i.imgur.com/qE2xj7x.jpg). 
 
 But it was always in the back of my mind, nagging me. If I could just get the code right, I could do it.
 

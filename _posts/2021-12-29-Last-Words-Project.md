@@ -31,12 +31,19 @@ After some further Googling, I stumbled upon [Zephyr](https://shoseii.tumblr.com
 
 # The Work
 I had my work cut out for me. While [the base of the code had already been written for me](https://stackoverflow.com/a/64873079) (thank you, internet!), I still needed to do a number of additional things to make it so it would "fit" my new Tumblr blog. These things included:
-* Rewriting the offender's information URL link based on if it was a JPG scan or an HTML page
+* Using BeautifulSoup to grab specific links in an HTML table
 * Removing all inmates that didn't have a last statement or declined to say one
 * Working around Tumblr's API limits
+* Iterating over batches of dataframes
+* Using matplotlib to generate simple statistical plots of the data
+* Using SymPy to *solve an algebraic equation* (woah! Haven't done that in a while!)
 
 # The Journey
-I've learned a ton about Pandas, dataframes, and Python in general. Even though most of my code was simply copied & pasted, the work I did have to do was enough to send me on a Python journey and as a result I feel a little more confident in my coding skills. Also, it was fun! And incredibly frustrating at times! 🌈
+I've learned a ton about Pandas, dataframes, and Python in general. Even though the base of my code was simply copied & pasted, the work I did have to do was enough to send me on a Python journey and as a result I feel a little more confident in my coding skills. I have a much better handle on the various Python modules and I'm honestly in awe of the whole Python module ecosystem. It's amazing. There's a module for damn near everything. Pandas, Numpy, and BeautifulSoup have been an incredible help here.
+
+Also, web scraping is _tough_. There's almost no coordination or standards from one page to the next; I spent so much time trying to account for every little deviation I was almost driven mad.
+
+With that being said, it was fun! And incredibly frustrating at times! 🌈
 
 # The Code
 [I've put up my code on my GitHub](https://github.com/perfectly-preserved-pie/lastwords). Feel free to flame me for my awful spaghetti code. I won't lie: I definitely coded with the intention of just making it work rather than making it work *well*.

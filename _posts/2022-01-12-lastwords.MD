@@ -34,7 +34,7 @@ After some further Googling, I stumbled upon [Zephyr](https://shoseii.tumblr.com
 
 ## The Work
 I had my work cut out for me. While [the base of the code had already been written for me](https://stackoverflow.com/a/64873079) (thank you, internet!), I still needed to do a number of additional things to make it so it would "fit" my new Tumblr blog. These things included:
-* Using BeautifulSoup to grab specific links in an HTML table based on their tag position (in this case, the second <a href> tag)
+* Using BeautifulSoup to grab specific links in an HTML table based on their tag position (in this case, the second "a href" tag)
  ```
    # Use bs4 to get the Offender Information URLs
    offender_information_urls = []

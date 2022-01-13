@@ -98,7 +98,7 @@ Also, web scraping is _tough_. There's almost no coordination or standards from 
 
 ![So many edge cases...](https://imgs.xkcd.com/comics/data_pipeline.png)
 
-With all that being said, it was fun! And incredibly frustrating at times! 🌈
+With all that being said, it was fun! And incredibly frustrating at times! 🥳
 
 ## The Code
 [I've put up my code on my GitHub](https://github.com/perfectly-preserved-pie/lastwords). Feel free to flame me for my awful spaghetti code. I won't lie: I definitely coded with the intention of just making it work rather than making it work *well*.

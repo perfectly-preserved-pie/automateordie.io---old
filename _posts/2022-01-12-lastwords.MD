@@ -13,7 +13,7 @@ Well, it turns out that
   
 And for the next 8 years or so, I floundered. I would get a burst of inspiration, work on the project, run into some coding obstacle, and then give up. 
 
-![Rinse and repeat for years and years](https://i.imgur.com/qE2xj7x.jpg). 
+![Rinse and repeat for years and years](https://i.imgur.com/qE2xj7x.jpg)
 
 But it was always in the back of my mind, nagging me. If I could just get the code right, I could do it.
 
@@ -95,7 +95,9 @@ I've learned a ton about Pandas, dataframes, and Python in general. Even though 
 
 Also, web scraping is _tough_. There's almost no coordination or standards from one page to the next; I spent so much time trying to account for every little deviation I was almost driven mad.
 
-With that being said, it was fun! And incredibly frustrating at times! 🌈
+![So many edge cases...](https://imgs.xkcd.com/comics/data_pipeline.png)
+
+With all that being said, it was fun! And incredibly frustrating at times! 🌈
 
 ## The Code
 [I've put up my code on my GitHub](https://github.com/perfectly-preserved-pie/lastwords). Feel free to flame me for my awful spaghetti code. I won't lie: I definitely coded with the intention of just making it work rather than making it work *well*.

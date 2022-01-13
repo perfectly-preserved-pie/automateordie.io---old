@@ -26,7 +26,7 @@ Additionally, I found that webscraping with PowerShell is pretty difficult; ther
 
 So I decided to use Python, which meant learning it from scratch. That was tough; coming from PowerShell, it was terribly confusing and foreign. But I had heard about modules like BeautifulSoup and Pandas which seemed perfect for my use case. Through a lot of copy and pasting from Reddit & StackOverflow (as is tradition), I managed to get a working proof-of-concept which gave me the hope and motiviation I needed to continue on.
 
-For the website, I tried out Wix and SquareSpace, but again was overwhelemed with the options and the fact that I couldn't see how to create a layout that was optimized not for photos or long blog posts, but for quotes only. So I went back to my source of inspiration, A Sea of Quotes. And then it hit me - why not just use Tumblr? I already had an excellent example of a quote post theme done right. Plus, Tumblr had a pretty good API with [a Python client available](https://github.com/tumblr/pytumblr).
+For the website, I tried out Wix and SquareSpace, but again was overwhelemed with the options and the fact that I couldn't see how to create a layout that was optimized for quotes only, instead of photos or long blog posts. So I went back to my source of inspiration, A Sea of Quotes. And then it hit me - why not just use Tumblr? I already had an excellent example of a quote post theme done right. Plus, Tumblr had a pretty good API with [a Python client available](https://github.com/tumblr/pytumblr).
 
 ## The Theme
 Initially I started out with [Notations](https://www.tumblr.com/theme/8631) but thought it looked a little outdated. I wasn't satisified and kept looking.

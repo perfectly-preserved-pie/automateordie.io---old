@@ -37,16 +37,16 @@ I had my work cut out for me. While [the base of the code had already been writt
 * Using BeautifulSoup to grab specific links in an HTML table
  ```
    # Use bs4 to get the Offender Information URLs
-    offender_information_urls = []
-    # Select the correct <a href> tag based on second tag I guess
-    for link in soup.select('tr>td:nth-child(2)>a'):
-      offender_information_urls.append(f"{base_url}/" + link['href'])
-    # Add the URLs to the dataframe
-    df["Offender Information"] = offender_information_urls
+   offender_information_urls = []
+   # Select the correct <a href> tag based on second tag I guess
+   for link in soup.select('tr>td:nth-child(2)>a'):
+       offender_information_urls.append(f"{base_url}/" + link['href'])
+   # Add the URLs to the dataframe
+   df["Offender Information"] = offender_information_urls
   ```
 * Removing all inmates that didn't have a last statement or declined to say one
  ```
- # Remove all inmates that don't have a last statement
+# Remove all inmates that don't have a last statement
 # We'll first create a list of keywords indicating no last statement
 # https://stackoverflow.com/a/43399866
 keywords = ['This inmate declined to make a last statement.','No statement was made.','No statement given.','None','None.','None ','(Written statement)','Spoken: No','Spoken: No.','No','No last statement.','No, I have no final statement.', '']

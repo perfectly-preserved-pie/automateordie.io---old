@@ -25,6 +25,7 @@ My original intent was to use a combination of an AWS LightSail WordPress instan
 Additionally, I found that webscraping with PowerShell is pretty difficult; there weren't many HTML modules (unless you want to get into .NET) I could use. I'd like to think I'm pretty good with PS but this project was just so far out of my wheelhouse I was at a loss.
 
 So I decided to use Python, which meant learning it from scratch. That was tough; coming from PowerShell, it was terribly confusing and foreign. But I had heard about modules like BeautifulSoup and Pandas which seemed perfect for my use case. Through a lot of copy and pasting from Reddit & StackOverflow (as is tradition), I managed to get a working proof-of-concept which gave me the hope and motiviation I needed to continue on.
+
 For the website, I tried out Wix and SquareSpace, but again was overwhelemed with the options and the fact that I couldn't see how to create a layout that was optimized not for photos or long blog posts, but for quotes only. So I went back to my source of inspiration, A Sea of Quotes. And then it hit me - why not just use Tumblr? I already had an excellent example of a quote post theme done right. Plus, Tumblr had a pretty good API with [a Python client available](https://github.com/tumblr/pytumblr).
 
 ## The Theme

@@ -1,0 +1,18 @@
+# Rejected Plates
+A few weeks ago I saw [a post on the /r/cars subreddit](https://www.reddit.com/r/cars/comments/siv6ik/in_florida_over_500_personalized_license_plate/) titled "In Florida, Over 500 Personalized License Plate Requests Were Denied in 2021 - Here's the List". It was a list of all the vanity plate requests that the Florida DMV had denied in 2021. A local Florida news station had gotten the data directly from the DMV, which I thought was very interesting. 
+
+I wanted to get a similiar list for other states and post it - but where? My mind instincively went to the [@everyword Twitter bot](https://twitter.com/everyword?lang=en). Because there was very little additional context available regarding the license plates (just like the English words that @everyword tweeted) I figured I should post the rejected vanity plates in a similiar fashion: a single string being Tweeted once an hour or so. I could write a Python script that would ingest the data via Pandas dataframe and iterate over it, Tweeting a single license plate at some set interval. Seemed easy enough...
+
+## Fun With FOIA
+But how could I get this data for other states and different years? I read the original news article and found a mention that the news station had submitted a FOIA request. "The Freedom of Information Act (FOIA) is a federal law that gives the public the right to make requests for federal agency records." There! I had a method to get data for other states now. After some more research on FOIA, I found a service that actually makes the requests for you, including following up, negotiating payments and data delivery methods, etc. It's called [MuckRock](https://www.muckrock.com/). Any FOIA request made on that website is then made publicly available for free, so I searched for rejected vanity plate records and [found about 11 of them](https://www.muckrock.com/foi/list/?csrfmiddlewaretoken=LK03Lo11SnN2japNrxaSeW31ymquwbe1YHlxvpQ4Z8aOTRrH10vMyHX6UfX73P2F&q=license+plate+vanity&status=done&has_embargo=&has_crowdfund=&minimum_pages=&date_range_min=&date_range_max=&file_types=). Some of them even had the data readily available in .CSV form which I could easily ingest via Panda's read_csv function.
+
+## "The good thing about standards is that there are so many to choose from."
+![image](https://user-images.githubusercontent.com/28774550/156232090-b3d30300-4afb-43ee-9ad8-e1ba6cc03396.png)
+
+Unfortunately, every state has their own method of delivering this data, so each completed FOIA request wasn't exactly the same. Some files had different headers (or no headers at all), some had additional details like rejection reason while others didn't, some were delivered in PDF form or .xls (old school Excel). It wasn't hard but I did have to manually clean up the spreadsheets or export from PDF to CSV. You can see my results on [the GitHub page for the project](https://github.com/perfectly-preserved-pie/rejectedplates/tree/main/States).
+
+### Side Note: Why Didn't I Post The Rejection Reason Along With The Plate?
+I elected to only post the plate itself simply because the rejection reason wasn't available consistently. While I could ask for it, going through the Muckrock documents I realized that a state may not have this data readily available and could possibly charge (more) money to complete the request. Some explanations given by state representatives:
+ * The reason is never logged/entered by policy
+ * The data is logged, but is in a different system and therefore requires manual labor to associate with each plate configuration
+ * The data is all pen-and-paper and nothing has been digitized (sounds about right for the DMV...). Therefore, manual labor and the associated costs are required.

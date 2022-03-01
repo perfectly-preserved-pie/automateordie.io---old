@@ -16,3 +16,5 @@ I elected to only post the plate itself simply because the rejection reason wasn
  * The reason is never logged/entered by policy
  * The data is logged, but is in a different system and therefore requires manual labor to associate with each plate configuration
  * The data is all pen-and-paper and nothing has been digitized (sounds about right for the DMV...). Therefore, manual labor and the associated costs are required.
+
+So it made more sense to just post the plate configuration only, as that's the only thing that would be consistently available. The reason, the date, etc. might not be.

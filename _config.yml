@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Sahib Bhai"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My name is Sahib - I'm a senior systems administrator with a love for automation and operations. I like to blog about personally interesting projects. At the moment I'm really into learning how to use Python."
+  bio    : "My name is Sahib - I'm a senior systems administrator with a love for automation and operations. I like to blog about personally interesting projects."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"

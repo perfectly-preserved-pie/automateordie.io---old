@@ -72,7 +72,7 @@ author:
       url: "https://github.com/perfectly-preserved-pie"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/sahib-bhai-78166394/"
+      url: "https://www.linkedin.com/in/sahibbhai"
       
         
 
@@ -86,7 +86,7 @@ footer:
       url: "https://github.com/perfectly-preserved-pie"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/sahib-bhai-78166394/"
+      url: "https://www.linkedin.com/in/sahibbhai"
 
 comments:
   provider: "disqus"

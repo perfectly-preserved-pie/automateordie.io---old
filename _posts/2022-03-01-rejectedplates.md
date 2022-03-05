@@ -49,6 +49,7 @@ for plate in df.itertuples():
 ```
 Admittedly, this isn't very efficient or fault-tolerant.
 
+#### The Looming Threat
 Say that down the line, once the account has 2,000+ tweets for example, the script crashes and I restart it. It would iterate through the dataframe from the beginning and for plate #1, send an API call for the last 10 tweets. But since plate #1 has already been tweeted days/weeks/months ago and there's already 2000+ tweets, plate #1 wouldn't be found in the last 10 tweets and therefore technically not exist. The script would then re-post plate #1 which isn't what I want (no duplicates!)
 
 According to Twitter's API docs, only the most 3200 recent tweets can be grabbed per one request via pagination. The first dataset alone (Maryland 2013) has approx. 4000 entries so I would need to use pagination and check that list for the plate entry instead of just looking through the last 10 tweets. Unfortunately that's something I didn't code for but I'm definitely looking into using pagination for subsequent datasets. For now, I'll take the risk that the Maryland 2013 dataset will complete without any crashing or hiccups.

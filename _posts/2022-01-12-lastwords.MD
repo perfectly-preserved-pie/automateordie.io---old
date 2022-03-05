@@ -35,7 +35,7 @@ After some further Googling, I stumbled upon [Zephyr](https://shoseii.tumblr.com
 ## The Work
 I had my work cut out for me. While [the base of the code had already been written for me](https://stackoverflow.com/a/64873079) (thank you, internet!), I still needed to do a number of additional things to make it so it would "fit" my new Tumblr blog. These things included:
 * Using BeautifulSoup to grab specific links in an HTML table based on their tag position (in this case, the second "a href" tag)
- ```
+ ```python
    # Use bs4 to get the Offender Information URLs
    offender_information_urls = []
    # Select the correct <a href> tag based on second tag I guess
@@ -45,7 +45,7 @@ I had my work cut out for me. While [the base of the code had already been writt
    df["Offender Information"] = offender_information_urls
   ```
 * Removing all inmates that didn't have a last statement or declined to say one
- ```
+ ```python
 # Remove all inmates that don't have a last statement
 # We'll first create a list of keywords indicating no last statement
 # https://stackoverflow.com/a/43399866
@@ -61,7 +61,7 @@ df.dropna(axis=0,how='any',subset=['Last Statement'],inplace=True)
 * Working around Tumblr's API limits
 * Iterating over batches of dataframes
 * Using matplotlib to generate simple statistical plots of the data
- ```
+ ```python
  # Age distribution
 # https://riptutorial.com/pandas/example/5965/grouping-numbers
 age_groups = pd.cut(df.Age, bins=[18, 20, 29, 39, 49, 59, 69, 79, 89], labels=['18 to 20 years old', '21 to 29 years old', '30 to 39 years old', '40 to 49 years old', '50 to 59 years old', '60 to 69 years old', '70 to 79 years old', '80 to 89 years old'])
@@ -80,7 +80,7 @@ plt.savefig("/tmp/age_distribution.png", bbox_inches = 'tight')
 plt.clf()
 ```
 * Using SymPy to *solve an algebraic equation* (woah! Haven't done that in a while!)
-```
+```python
 # Algebra comes in handy here. My high school math teacher has finally been vindicated 15 years later 👏
 # It doesn't matter how many rows we have: we need to post x posts until we remain with 300 posts
 # The last 300 posts will be queued

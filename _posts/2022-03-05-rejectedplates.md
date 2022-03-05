@@ -29,7 +29,7 @@ The script itself is pretty simple. I'm again using Pandas to iterate over a dat
 
 I elected to use the latter method [using the Tweepy Python module](https://docs.tweepy.org/en/stable/client.html#tweepy.Client.get_users_tweets):
 
-``` 
+```python
 for plate in df.itertuples():
 	try:
 		# Get the most recent 10 tweets
@@ -60,7 +60,7 @@ This time around I wanted to make sure all progress/warnings/errors would be log
 #### Logging
 
 Logging to a file was simple enough thanks to [Python's native logging module](https://docs.python.org/3/howto/logging.html#logging-to-a-file): 
-```
+```python
 # Log to a file
 logging.basicConfig(
 	filename='rejectedplates.log',
@@ -71,7 +71,7 @@ logging.basicConfig(
 ```
 
 Doing a `tail -f rejectedplates.log` gets me a nice autoscrolling output about what's going on:
-```
+```shell
 2022-03-02 06:43:05 AM - root - INFO - 11MFA0 has been tweeted.
 2022-03-02 07:13:06 AM - root - INFO - 11MFAO has been tweeted.
 2022-03-02 07:43:06 AM - root - INFO - 11UV1R6 has been tweeted.
@@ -82,7 +82,7 @@ Doing a `tail -f rejectedplates.log` gets me a nice autoscrolling output about w
 But parsing through a log file isn't enough. I wanted to be notified immediately if there was any warning or error. I don't really need to be alerted any time there's a success, so no INFO or DEBUG-type messages would be needed. I opted to use a Telegram bot to notify me as that's what I've done for a few other homelab projects.
 
 There are multiple Python Telegram modules available but since I didn't need anything super complicated or powerful I opted to use Telethon as that seemed the easiest to set up and get running. I [created a Telegram app](https://docs.telethon.dev/en/stable/basic/signing-in.html#signing-in) and added some code to sign in as a bot:
-```
+```python
 # Set up Telegram API stuff
 # https://my.telegram.org, under API Development.
 # https://docs.telethon.dev/en/stable/basic/signing-in.html#signing-in-as-a-bot-account
@@ -94,7 +94,7 @@ bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 ```
 
 And then added a few try/except blocks to send any exceptions to the Telegram bot which would alert me. For example, if there was an error retrieving the last tweets from the Twitter API:
-```
+```python
 except tweepy.TweepError as e:
 		timeline_error_msg = f"Couldn't get the last 10 tweets because {e.reason}"
 		logging.error(timeline_error_msg)
@@ -105,7 +105,7 @@ except tweepy.TweepError as e:
 I both log it to a file and send it via Telegram.
 
 Or if a plate configuration had already been tweeted:
-```
+```python
 elif plate[1] in tweets_list:
 		post_warning_msg = f"{plate[1]} was already tweeted, skipping..."
 		logging.warning(post_warning_msg)

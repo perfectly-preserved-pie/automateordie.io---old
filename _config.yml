@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Nothing In Particular
-subtitle: "hello_world.exe"
+subtitle: "Blurring the line between efficiency and laziness"
 email: me@sahibbhai.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Why spend 5 minutes doing something manually when you can spend 7 days trying to automate it?
+  Why spend 5 minutes doing something manually when you can spend 5 days trying to automate it?
 twitter_username: username
 github_username: perfectly-preserved-pie
 minimal_mistakes_skin: dark

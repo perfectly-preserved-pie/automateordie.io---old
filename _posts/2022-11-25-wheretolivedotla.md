@@ -3,7 +3,7 @@
 ## You can view [my source code](https://github.com/perfectly-preserved-pie/larentals) on GitHub. The website is located at [https://wheretolive.la](https://wheretolive.la).
 
 I've been looking to move into a new place for a while now and have been amassing resources and websites that I can peruse through to find the right place.
-One of the moderators on [the /r/LArentals subreddit](https://www.reddit.com/r/LARentals/) posts [a spreadsheet](https://www.reddit.com/r/LARentals/) of new rental properties every week.
+One of the moderators on [the /r/LArentals subreddit](https://www.reddit.com/r/LARentals/) posts [a spreadsheet](https://docs.google.com/spreadsheets/d/1gBLt73zziGg41IUS3FdqU4ddULWV5sFaSRawLyO5YyY/edit#gid=80625330) of new rental properties every week.
 
 As you can see, it's quite detailed and organized: https://user-images.githubusercontent.com/28774550/188333676-11846918-2c1d-4ebd-aa92-897fc2f18dfa.png
 

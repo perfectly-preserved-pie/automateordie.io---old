@@ -1,6 +1,6 @@
 # WhereToLive.LA
 
-## You can view [my source code](https://github.com/perfectly-preserved-pie/larentals) on GitHub. The website is located at https://wheretolive.la.
+## You can view [my source code](https://github.com/perfectly-preserved-pie/larentals) on GitHub. The website is located at [https://wheretolive.la](https://wheretolive.la).
 
 I've been looking to move into a new place for a while now and have been amassing resources and websites that I can peruse through to find the right place.
 One of the moderators on [the /r/LArentals subreddit](https://www.reddit.com/r/LARentals/) posts [a spreadsheet](https://www.reddit.com/r/LARentals/) of new rental properties every week.

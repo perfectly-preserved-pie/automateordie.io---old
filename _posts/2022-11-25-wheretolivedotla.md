@@ -195,7 +195,7 @@ def webscrape_bhhs(url, row_index):
 ```
 
 ## Challenges
-I've been eternally frustrated by two major things and a third one that just popped up today (11/25):
+I've been eternally frustrated by these first two challenges and saddened by the third one:
 1. Slow rendering of markers due to poor Pandas operations
 2. The map looks like shit on mobile
 3. And now, [the announcement](https://www.reddit.com/r/LARentals/comments/z48xdj/no_rentals_list_going_forward_11252022/) from my one and only data source that the weekly spreadsheets are no more

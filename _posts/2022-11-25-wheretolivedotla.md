@@ -111,7 +111,7 @@ That function uses the Pandas dataframe row to populate different fields like re
 
 So now, whenever a user clicks on a marker, a popup appears with that property's details. Very handy to see what it's like at a glance.
 
-# Filters
+### Filters
 So I had the map and markers ready, but how could I filter the markers depending on different variables? Luckily, that's what Dash does via "[callbacks](https://dash.plotly.com/basic-callbacks)". A box could be checked or a slider could be dragged, and that would cause an action on the backend to fire off. In my case, a checked box would need to change the dataframe; the dataframe is how the markers on the map are being populated. So if I wanted to see ONLY condos, I would need to query the dataframe for ONLY condos.
 
 ```python
@@ -142,3 +142,52 @@ def update_map(subtypes_chosen, pets_chosen, terms_chosen, garage_spaces, rental
   # Create markers & associated popups from dataframe
   markers = [dl.Marker(children=dl.Popup(popup_html(row)), position=[row.Latitude, row.Longitude]) for row in df_filtered.itertuples()]
   ```
+  
+  ### Web Scraping
+  Because knowing _when_ a listing was posted is important (a listing from 9 months ago probably isn't going to be available) I wanted to get the "listed" date. That also led me to finding an MLS photo associcated with the property, so I figured I'd scrape that too and insert that photo into the HTML popup for the property.
+
+```python
+## Webscraping Time
+# Create a function to scrape the listing's Berkshire Hathaway Home Services (BHHS) page using BeautifulSoup 4 and extract some info
+def webscrape_bhhs(url, row_index):
+    try:
+        response = requests.get(url)
+        soup = bs4(response.text, 'html.parser')
+        # First find the URL to the actual listing instead of just the search result page
+        try:
+          link = 'https://www.bhhscalifornia.com' + soup.find('a', attrs={'class' : 'btn cab waves-effect waves-light btn-details show-listing-details'})['href']
+          logging.info(f"Successfully fetched listing URL for {row_index}.")
+        except AttributeError as e:
+          link = None
+          logging.warning(f"Couldn't fetch listing URL for {row_index}. Passing on...")
+          pass
+        # If the URL is available, fetch the MLS photo and listed date
+        if link is not None:
+          # Now find the MLS photo URL
+          # https://stackoverflow.com/a/44293555
+          try:
+            photo = soup.find('a', attrs={'class' : 'show-listing-details'}).contents[1]['src']
+            logging.info(f"Successfully fetched MLS photo for {row_index}.")
+          except AttributeError as e:
+            photo = None
+            logging.warning(f"Couldn't fetch MLS photo for {row_index}. Passing on...")
+            pass
+          # For the list date, split the p class into strings and get the last element in the list
+          # https://stackoverflow.com/a/64976919
+          try:
+            listed_date = soup.find('p', attrs={'class' : 'summary-mlsnumber'}).text.split()[-1]
+            logging.info(f"Successfully fetched listed date for {row_index}.")
+          except AttributeError as e:
+            listed_date = pd.NaT
+            logging.warning(f"Couldn't fetch listed date for {row_index}. Passing on...")
+            pass
+        elif link is None:
+          pass
+    except Exception as e:
+      listed_date = pd.NaT
+      photo = NaN
+      link = NaN
+      logging.warning(f"Couldn't scrape BHHS page for {row_index} because of {e}. Passing on...")
+      pass
+    return listed_date, photo, link 
+    ```

@@ -30,7 +30,7 @@ Because the spreadsheet was already in CSV form, Pandas was an obvious choice he
 I first needed some kind of API that I could feed street addresses from the spreadsheet and it would spit out the assoicated coordinates. I intially spun up an instance of Nominatim because it was free and easy and tried that. Unfortunately, quite a few addresses just simply wouldn't resolve in Nominatim but resolved just fine with the Google Maps API. So I switched over to Google Maps, which provides [a generous free tier](https://mapsplatform.google.com/pricing/) ($200/month).
 I haven't had any issues since then; it handled every address I threw at it and returned me accurate coordinates. 
 
-I created a quick function to return coordiantes based on a provided street address:
+I created a quick function to return coordinates based on a provided street address:
 
 ```python
 # Create a function to get coordinates from the full street address

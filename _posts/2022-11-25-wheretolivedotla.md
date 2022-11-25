@@ -144,7 +144,7 @@ def update_map(subtypes_chosen, pets_chosen, terms_chosen, garage_spaces, rental
   markers = [dl.Marker(children=dl.Popup(popup_html(row)), position=[row.Latitude, row.Longitude]) for row in df_filtered.itertuples()]
   ```
   
-  ### Web Scraping
+### Web Scraping
   Because knowing _when_ a listing was posted is important (a listing from 9 months ago probably isn't going to be available) I wanted to get the "listed" date. That also led me to finding an MLS photo associcated with the property, so I figured I'd scrape that too and insert that photo into the HTML popup for the property.
 
 ```python

@@ -205,9 +205,9 @@ I'll address these 3 challenges below:
 
 2: caused by me not being a web developer and understanding how to make the Dash-Leaflet HTML popup resize itself based on device size like the cards do with Dash-Bootstrap-Components. As a result the website is only functionally usable on big screens like tablets, laptops, and monitors.
 
-3: I had a feeling this might happen but was hoping to finish this project in time before it happened so people got some use out of it. Alas, that didn't happen and as a result without any new incoming data, this project is dead in the water and will soon be totally irrelevant as the current rental listings change or drop off the market. The tl;dr of it is that the guy/gal who posts these CSV spreadsheets weekly has [announced that they can't do it any longer](https://www.reddit.com/r/LARentals/comments/z48xdj/no_rentals_list_going_forward_11252022/). I'm pissed that Reddit is incapable of constructive debate even with a "spicy" topic such as real estate and housing in LA; this is why we can't have good things. Everyone loses. 
+3: I had a feeling this might happen but was hoping to finish this project in time before it happened so people got some use out of it. Alas, that didn't happen and as a result without any new incoming data, this project is dead in the water and will soon be totally irrelevant as the current rental listings change or drop off the market. The tl;dr of it is that the guy/gal who posts these CSV spreadsheets weekly has [announced that they can't do it any longer](https://www.reddit.com/r/LARentals/comments/z48xdj/no_rentals_list_going_forward_11252022/). Without any new incoming data, this project will pretty rapidly fall into irrelevance.
 
-But a project that relies on a single dependency is doomed to fail eventually I guess:
+I knew that would be a risk; any project that relies on a single dependency is a risky endeavor:
 
 ![one guy](https://imgs.xkcd.com/comics/dependency.png)
 

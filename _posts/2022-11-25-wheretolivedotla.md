@@ -1,4 +1,7 @@
 # WhereToLive.LA
+
+## You can view [my source code](https://github.com/perfectly-preserved-pie/larentals) on GitHub. The website is located at https://wheretolive.la.
+
 I've been looking to move into a new place for a while now and have been amassing resources and websites that I can peruse through to find the right place.
 One of the moderators on [the /r/LArentals subreddit](https://www.reddit.com/r/LARentals/) posts [a spreadsheet](https://www.reddit.com/r/LARentals/) of new rental properties every week.
 
@@ -7,8 +10,6 @@ As you can see, it's quite detailed and organized: https://user-images.githubuse
 You can filter by any column to narrow down the results list. I absolutely loved that - Zillow, RedFin, etc. don't have as quite a granular filter as this spreadsheet does.
 
 But I was a little miffed that I kept having to open new tabs and paste the street address into Google to find out where in LA the property resided. At 350+ rows, that's a LOT of browser tabs and LA County is such a massive sprawl that I simply can't visualize where every property is.
-
-You can view [my source code](https://github.com/perfectly-preserved-pie/larentals) on GitHub. The website is located at https://wheretolive.la.
 
 ## The Idea
 So I thought, "why not just visually map every street address on Google Maps?" And then that idea became "the map should be filterable in all the same ways as the spreadsheet."

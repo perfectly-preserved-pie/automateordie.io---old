@@ -202,7 +202,7 @@ I've been eternally frustrated by these first two challenges and saddened by the
 
 I'll address these 3 challenges below:
 
-1: caused by (I'm guessing) the 16 Pandas operations that take place every time you change a user option like rent price, pet policy, etc. I haven't been able to figure out a way to optimize that.
+1: probably caused by [the 16 separate Pandas operations that take place every time you change a user option](https://github.com/perfectly-preserved-pie/larentals/blob/master/app.py#L938-L960) like rent price, pet policy, etc. I haven't been able to figure out a way to optimize that.
 
 2: caused by me not being a web developer and understanding how to make the Dash-Leaflet HTML popup resize itself based on device size like the cards do with Dash-Bootstrap-Components. As a result the website is only functionally usable on big screens like tablets, laptops, and monitors.
 

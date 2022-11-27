@@ -2,6 +2,10 @@
 
 ## You can view [my source code](https://github.com/perfectly-preserved-pie/larentals) on GitHub. The website is located at [https://wheretolive.la](https://wheretolive.la).
 
+### I recommend viewing the website on a device with a large screen (tablet, laptop, etc.). Mobile devices won't have a good UI experience (see the [Challenges section at the end)](https://github.com/perfectly-preserved-pie/perfectly-preserved-pie.github.io/edit/master/_posts/2022-11-25-wheretolivedotla.md#challenges).
+
+---
+
 I've been looking to move into a new place for a while now and have been amassing resources and websites that I can peruse through to find the right place.
 One of the moderators on [the /r/LArentals subreddit](https://www.reddit.com/r/LARentals/) posts [a spreadsheet](https://docs.google.com/spreadsheets/d/1gBLt73zziGg41IUS3FdqU4ddULWV5sFaSRawLyO5YyY/edit#gid=80625330) of new rental properties every week.
 
@@ -204,7 +208,7 @@ I'll address these 3 challenges below:
 
 1: probably caused by [the 16 separate Pandas operations that take place every time you change a user option](https://github.com/perfectly-preserved-pie/larentals/blob/master/app.py#L938-L960) like rent price, pet policy, etc. I haven't been able to figure out a way to optimize that.
 
-2: caused by me not being a web developer and understanding how to make the Dash-Leaflet HTML popup resize itself based on device size like the cards do with Dash-Bootstrap-Components. As a result the website is only functionally usable on big screens like tablets, laptops, and monitors.
+2: caused by me not being a web developer and not understanding how to make the Dash-Leaflet HTML popup resize itself based on device size like the cards do with Dash Bootstrap Components. [As a result the marker popup is rendered _way too big_ for mobile devices](https://user-images.githubusercontent.com/28774550/204154932-d7d41930-6d47-49d1-90c7-5ca619b6c03a.jpeg). The popup gets cut off and takes up most of the available space on the map, making it difficult to navigate away. The website is only functionally usable on big screens like tablets, laptops, and monitors. If you have any ideas on how to resolve this, please submit a PR or issue! 😩
 
 3: The tl;dr of it is that the guy/gal who posts these CSV spreadsheets weekly has [announced that they can't do it any longer](https://www.reddit.com/r/LARentals/comments/z48xdj/no_rentals_list_going_forward_11252022/). I had a feeling this might happen but was hoping to finish this project in time before it happened so people got some use out of it. Alas, I was too late/slow. Without any new incoming data, this project is dead in the water and will soon be totally irrelevant as the current rental listings change or drop off the market.
 

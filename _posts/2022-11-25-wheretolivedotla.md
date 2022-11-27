@@ -7,7 +7,7 @@ One of the moderators on [the /r/LArentals subreddit](https://www.reddit.com/r/L
 
 As you can see, [it's quite detailed and organized.](https://user-images.githubusercontent.com/28774550/188333676-11846918-2c1d-4ebd-aa92-897fc2f18dfa.png)
 
-You can filter by any column to narrow down the results list. I absolutely loved that - Zillow, RedFin, etc. don't have as quite a granular filter as this spreadsheet does.
+You can filter by any column to narrow down the results list. I absolutely loved that; Zillow, RedFin, etc. don't have as quite a granular filter as this spreadsheet does.
 
 But I was a little miffed that I kept having to open new tabs and paste the street address into Google to find out where in LA the property resided. At 350+ rows, that's a LOT of browser tabs and LA County is such a massive sprawl that I simply can't visualize where every property is.
 
@@ -196,9 +196,9 @@ def webscrape_bhhs(url, row_index):
 
 ## Challenges
 I've been eternally frustrated by these first two challenges and saddened by the third one:
-1. Slow rendering of markers due to poor Pandas operations
+1. Slow rendering of markers due to poor Pandas dataframe query performance
 2. The map looks like shit on mobile
-3. And now, [the announcement](https://www.reddit.com/r/LARentals/comments/z48xdj/no_rentals_list_going_forward_11252022/) from my one and only data source that the weekly spreadsheets are no more
+3. And now, [the announcement](https://www.reddit.com/r/LARentals/comments/z48xdj/no_rentals_list_going_forward_11252022/) from the person who makes the spreadsheets that the weekly spreadsheets are no more
 
 I'll address these 3 challenges below:
 
@@ -206,12 +206,12 @@ I'll address these 3 challenges below:
 
 2: caused by me not being a web developer and understanding how to make the Dash-Leaflet HTML popup resize itself based on device size like the cards do with Dash-Bootstrap-Components. As a result the website is only functionally usable on big screens like tablets, laptops, and monitors.
 
-3: I had a feeling this might happen but was hoping to finish this project in time before it happened so people got some use out of it. Alas, that didn't happen and as a result without any new incoming data, this project is dead in the water and will soon be totally irrelevant as the current rental listings change or drop off the market. The tl;dr of it is that the guy/gal who posts these CSV spreadsheets weekly has [announced that they can't do it any longer](https://www.reddit.com/r/LARentals/comments/z48xdj/no_rentals_list_going_forward_11252022/). Without any new incoming data, this project will pretty rapidly fall into irrelevance.
+3: The tl;dr of it is that the guy/gal who posts these CSV spreadsheets weekly has [announced that they can't do it any longer](https://www.reddit.com/r/LARentals/comments/z48xdj/no_rentals_list_going_forward_11252022/). I had a feeling this might happen but was hoping to finish this project in time before it happened so people got some use out of it. Alas, I was too late/slow. Without any new incoming data, this project is dead in the water and will soon be totally irrelevant as the current rental listings change or drop off the market.
 
 I knew that would be a risk; any project that relies on a single dependency is a risky endeavor:
 
 ![one guy](https://imgs.xkcd.com/comics/dependency.png)
 
-So, yeah. This is all I got. If the spreadsheets start being posted again I'll absolutely continue to work on this project, but I'm pretty demotivated at the moment and there's really no point in making any further changes to WhereToLive without any new data. So fuck it, [we outty](https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F001%2F102%2F822%2F616.jpg)
+So, yeah. This is all I got. If the spreadsheets start being posted again I'll absolutely continue to work on this project, but I'm pretty demotivated at the moment and there's really no point in making any further big changes to WhereToLive without any new data. So fuck it, [we outty](https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F001%2F102%2F822%2F616.jpg)
 
 I hope you get some use out of this website, it was a labor of love (salute emoji)

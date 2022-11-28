@@ -2,7 +2,7 @@
 
 ## You can view [my source code](https://github.com/perfectly-preserved-pie/larentals) on GitHub. The website is located at [https://wheretolive.la](https://wheretolive.la).
 
-### I recommend viewing the website on a device with a large screen (tablet, laptop, etc.). Mobile devices won't have a good UI experience (see the [Challenges section at the end)](https://github.com/perfectly-preserved-pie/perfectly-preserved-pie.github.io/blob/master/_posts/2022-11-25-wheretolivedotla.md#challenges).
+### I recommend viewing the website on a device with a large screen (tablet, laptop, etc.). Mobile devices won't have a good UI experience (for the reason why see the [Challenges section at the end)](https://automateordie.io/wheretolivedotla/#challenges).
 
 ---
 

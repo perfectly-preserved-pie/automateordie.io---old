@@ -206,7 +206,7 @@ I've been eternally frustrated by these first two challenges and saddened by the
 
 I'll address these 3 challenges below:
 
-1: probably caused by [the 16 separate Pandas operations that take place every time you change a user option](https://github.com/perfectly-preserved-pie/larentals/blob/master/app.py#L938-L961) like rent price, pet policy, etc. I haven't been able to figure out a way to optimize that.
+1: probably caused by [the 16 separate Pandas operations that take place every time you change a user option](https://github.com/perfectly-preserved-pie/larentals/blob/master/app.py#L936-L961) like rent price, pet policy, etc. I haven't been able to figure out a way to optimize that.
 
 2: caused by me not being a web developer and not understanding how to make the Dash-Leaflet HTML popup resize itself based on device size like the cards do with Dash Bootstrap Components. [As a result the marker popup is rendered _way too big_ for mobile devices](https://user-images.githubusercontent.com/28774550/204154932-d7d41930-6d47-49d1-90c7-5ca619b6c03a.jpeg). The popup gets cut off and takes up most of the available space on the map, making it difficult to navigate away. The website is only functionally usable on big screens like tablets, laptops, and monitors. If you have any ideas on how to resolve this, please submit a PR or issue! 😩
 

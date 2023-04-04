@@ -202,7 +202,7 @@ def webscrape_bhhs(url, row_index):
 I've been eternally frustrated by these first two challenges and saddened by the third one:
 1. Slow rendering of markers due to poor Pandas dataframe query performance
 2. The map looks like shit on mobile
-3. ~~And now, [the announcement](https://www.reddit.com/r/LARentals/comments/z48xdj/no_rentals_list_going_forward_11252022/) from the person who makes the spreadsheets that the weekly spreadsheets are no more~~
+3. The inherent fragility of relying on a single source of data for a project
 
 I'll address these 3 challenges below:
 
@@ -210,12 +210,6 @@ I'll address these 3 challenges below:
 
 2: caused by me not being a web developer and not understanding how to make the Dash-Leaflet HTML popup resize itself based on device size like the cards do with Dash Bootstrap Components. [As a result the marker popup is rendered _way too big_ for mobile devices](https://user-images.githubusercontent.com/28774550/204154932-d7d41930-6d47-49d1-90c7-5ca619b6c03a.jpeg). The popup gets cut off and takes up most of the available space on the map, making it difficult to navigate away. The website is only functionally usable on big screens like tablets, laptops, and monitors. If you have any ideas on how to resolve this, please submit a PR or issue! 😩
 
-3: ~~The tl;dr of it is that the guy/gal who posts these CSV spreadsheets weekly has [announced that they can't do it any longer](https://www.reddit.com/r/LARentals/comments/z48xdj/no_rentals_list_going_forward_11252022/). I had a feeling this might happen but was hoping to finish this project in time before it happened so people got some use out of it. Alas, I was too late/slow. Without any new incoming data, this project is dead in the water and will soon be totally irrelevant as the current rental listings change or drop off the market.~~
-
-~~I knew that would be a risk; any project that relies on a single dependency is a risky endeavor:~~
-
-![one guy](https://imgs.xkcd.com/comics/dependency.png)
-
-### **EDIT!** #3 has been resolved; after getting overwhelming support the person has decided to resume posting the weekly spreadsheets! Fuck yeah!!! This project is back on track baby 🎉
+3: My data source comes from [one guy](https://imgs.xkcd.com/comics/dependency.png) on Reddit. If they stop posting the spreadsheets for any reason, this project becomes dead in the water. Unfortunately I don't see a way to supplement the data unless I start to scrape other MLS websites, which is a pretty big endeavor on its own and something I'm just not too interested in doing at the moment.
 
 I hope you get some use out of this website; it was a labor of love.

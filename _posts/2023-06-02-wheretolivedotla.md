@@ -147,7 +147,7 @@ def update_map(subtypes_chosen, pets_chosen, terms_chosen, garage_spaces, rental
 ### Mapping
 Now that I had a list of coordinates, I needed a way to actually _display_ the points on the map. This led me to [Folium](http://python-visualization.github.io/folium/), however I wasn't too happy with the look and soon moved on to [Dash by Plotly](https://github.com/plotly/dash). Even then I still wasn't satisified with any of the map types. Heatmaps, chloropeths, etc. all were too complex for what I wanted: a simple marker with a table of the property's characteristics (rent price, garage spaces, address, etc.). My search led me to [Dash-Leaflet](https://dash-leaflet.herokuapp.com/) which was perfect. Not only did it look good but nearby points could all be part of a cluster group that would expand and shrink as the user zoomed the map in or out:
 
-![Example](https://i.imgur.com/czbdxpQ.mp4)
+https://i.imgur.com/czbdxpQ.mp4
 
 I wanted each marker to show the property details, so I created a pretty massive function to return HTML code for the marker's popup:
 ```python

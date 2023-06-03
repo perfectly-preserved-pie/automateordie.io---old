@@ -149,7 +149,7 @@ Now that I had a list of coordinates, I needed a way to actually _display_ the p
 
 [Example](https://i.imgur.com/czbdxpQ.mp4)
 
-I wanted each marker to show the property details, so I created a pretty massive function to return HTML code for the marker's popup:
+I wanted each marker to show the property details, so I created a function to return HTML code for the marker's popup:
 ```python
 # Define HTML code for the popup so it looks pretty and nice
 def popup_html(row):

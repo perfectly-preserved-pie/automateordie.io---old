@@ -282,9 +282,10 @@ def check_expired_listing(url, mls_number):
 At some point due to [performance issues](https://github.com/thedirtyfew/dash-leaflet/issues/168#issuecomment-1374404327) with `dl.MarkerClusterGroup` I switched to using `dl.GeoJSON` to generate the markers. Unforunately, this change meant that whenever the map is panned or zoomed, even just a tiny bit, any open popup immediately closes. 
 To make things worse, clicking on a marker automatically pans the map to fit the resulting popup, but the MLS photo loads _after_ the popup and therefore the map pans _a second time_, closing the popup. You'd have to click a marker twice, sometimes even 3 or 4 times, to get the popup to stay. That leads to a frustrating UX (at least for me), because panning the map shouldn't close the popup. It's even worse on a mobile device (or any device with a small screen) because there's so little screen real estate to begin with.
 
-`dl.GeoJSON` doesn't have a `autoPan` option like `dl.Marker` does, so there's no easy way to solve the autopanning issue.
+Basically, the problem is that with `cluster=True`, the clusters (and markers) are redrawn whenever the viewport changes (by panning or zooming). That's what makes the popups close.
 
-I've searched long and hard for a solution to either one or both of these issues but it seems like this is a pretty hard limitation of the Dash Leaflet library. Any real solution would require a PR to change the source code, and that means extensive knowledge of both Python and JavaScript which I don't have. It's been a huge pain in my ass for months and I hate it so much 😤
-If you have any ideas, [I'd love to hear them](https://github.com/perfectly-preserved-pie/larentals/issues/86)! Please help me lol. [PLEASE I BEG YOU](https://youtu.be/eq0bt0nuzbY?t=17)
+Happily, [Emil has solved this with a new version of Dash Leaflet](https://github.com/thedirtyfew/dash-leaflet/issues/180#issuecomment-1694490970). The popups stay open even when you pan or zoom the map, greatly reducing the UX friction. Mad props to Emil for doing this.
 
-I hope you get some use out of this website; it was a labor of love.
+This was a long, long running bug in the project ([7 months!](https://github.com/perfectly-preserved-pie/larentals/pull/16)). It's finally been squashed and I couldn't be more relieved because it has bugged me the entire damn time. 
+
+Anyways, I hope you get some use out of this website; it was a labor of love.

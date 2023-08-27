@@ -39,21 +39,24 @@ I created a quick function to return coordinates based on a provided street addr
 
 ```python
 # Create a function to get coordinates from the full street address
-g = GoogleV3(api_key=os.getenv('GOOGLE_API_KEY')) # https://github.com/geopy/geopy/issues/171
-def return_coordinates(address):
+def return_coordinates(address, row_index):
     try:
-        geocode_info = g.geocode(address)
+        geocode_info = g.geocode(address, components={'administrative_area': 'CA', 'country': 'US'})
         lat = float(geocode_info.latitude)
         lon = float(geocode_info.longitude)
-        coords = f"{lat}, {lon}"
-    except Exception:
+    except Exception as e:
         lat = NaN
         lon = NaN
-        coords = NaN
-    return lat, lon, coords
+        logger.warning(f"Couldn't fetch geocode information for {address} (row {row.Index} of {len(df)}) because of {e}.")
+    logger.success(f"Fetched coordinates {lat}, {lon} for {address} (row {row.Index} of {len(df)}).")
+    return lat, lon
 ```
+You'll see that I had to add `CA` and `US` as conditions within `components`; this ensures that all results are restricted to California, USA. I was getting some coordinates that were all the way in China, some in Africa, and some in the middle of the Atlantic Ocean.
+I'm not entirely sure why, but part of the reason for that is that there are cities with the same names in other states/countries. For example: Lancaster, MA.
 
-And then I iterated over every row with that function:
+Putting these constraints in ensures that I get the right coordinates for the California city.
+
+Then I iterated over every row with that function:
 
 ```python
 # Iterate through the dataframe and fetch coordinates for rows that don't have them
@@ -142,7 +145,7 @@ def update_map(subtypes_chosen, pets_chosen, terms_chosen, garage_spaces, rental
   ]
   ```
   
- You can see here that the callback performs [various dataframe options (filtering, comparing strings, etc.)](https://github.com/perfectly-preserved-pie/larentals/blob/master/pages/lease_page.py#L40-L198) and puts the results in a `df_filtered` variable. I then iterate through `df_filtered` to generate the markers & their associated popups, as you'll see below.
+You can see here that the callback performs [various dataframe options (filtering, comparing strings, etc.)](https://github.com/perfectly-preserved-pie/larentals/blob/master/pages/lease_page.py#L40-L198) and puts the results in a `df_filtered` variable. I then iterate through `df_filtered` to generate the markers & their associated popups, as you'll see below.
 
 ### Mapping
 Now that I had a list of coordinates, I needed a way to actually _display_ the points on the map. This led me to [Folium](http://python-visualization.github.io/folium/), however I wasn't too happy with the look and soon moved on to [Dash by Plotly](https://github.com/plotly/dash). Even then I still wasn't satisified with any of the map types. Heatmaps, chloropeths, etc. all were too complex for what I wanted: a simple marker with a table of the property's characteristics (rent price, garage spaces, address, etc.). My search led me to [Dash-Leaflet](https://dash-leaflet.herokuapp.com/) which was perfect. Not only did it look good but nearby points could all be part of a cluster group that would expand and shrink as the user zoomed the map in or out:

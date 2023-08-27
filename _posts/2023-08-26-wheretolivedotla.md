@@ -2,7 +2,7 @@
 
 ## You can view [my source code](https://github.com/perfectly-preserved-pie/larentals) on GitHub. The website is located at [https://wheretolive.la](https://wheretolive.la).
 
-### I recommend viewing the website on a device with a large screen (tablet, laptop, etc.). Mobile devices won't have a good UI experience (for the reason why see the [Challenges section at the end)](https://automateordie.io/wheretolivedotla/#challenges).
+### The website is mobile-friendly (enough) but I still recommend viewing it on a device with a large screen (tablet, laptop, etc.)
 
 ---
 
@@ -287,7 +287,7 @@ To make things worse, clicking on a marker automatically pans the map to fit the
 
 Basically, the problem is that with `cluster=True`, the clusters (and markers) are redrawn whenever the viewport changes (by panning or zooming). That's what makes the popups close.
 
-Happily, [Emil has solved this with a new version of Dash Leaflet](https://github.com/thedirtyfew/dash-leaflet/issues/180#issuecomment-1694490970). The popups stay open even when you pan or zoom the map, greatly reducing the UX friction. Mad props to Emil for doing this.
+I brought up this issue on the official GitHub repo and happily, [Emil has solved this with a new version of Dash Leaflet](https://github.com/thedirtyfew/dash-leaflet/issues/180#issuecomment-1694490970). The popups stay open even when you pan or zoom the map, greatly reducing the UX friction. Thank you Emil!!
 
 This was a long, long running bug in the project ([7 months!](https://github.com/perfectly-preserved-pie/larentals/pull/16)). It's finally been squashed and I couldn't be more relieved because it has bugged me the entire damn time. 
 

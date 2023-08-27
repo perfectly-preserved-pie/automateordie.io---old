@@ -55,6 +55,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-last-modified-at
 
 author:
   name   : "Sahib Bhai"

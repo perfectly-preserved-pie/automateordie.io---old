@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Sahib Bhai"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "I'm a senior systems administrator with a love for automation and operations. I like to spend part of my free time either developing fun Dash Python applications or gardening, depending on how sick I am of staring at a computer screen that day :)"
+  bio    : "I'm a jack of ~all~ ~most~ some trades with a love for automation and operations. I like to spend part of my free time either developing fun Dash Python applications or gardening, depending on how sick I am of staring at a computer screen that day :)"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
